@@ -1,4 +1,6 @@
-//
+// note to self: look into using firebase in order to connect to Google maps
+
+
 //  GPSViewController.swift
 //  UVA Accessibility
 //
