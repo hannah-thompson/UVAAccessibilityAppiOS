@@ -13,6 +13,9 @@
 		BB4DEFEA2190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB4DEFE82190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld */; };
 		BB4DEFEC2190EF450008C5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */; };
 		BB4DEFEF2190EF450008C5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEFED2190EF450008C5B5 /* LaunchScreen.storyboard */; };
+		BBA7E267219900DC00777214 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E266219900DC00777214 /* GPSViewController.swift */; };
+		BBA7E269219900E900777214 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E268219900E900777214 /* ResourcesViewController.swift */; };
+		BBA7E26B219900F800777214 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E26A219900F800777214 /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4DEFEE2190EF450008C5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB4DEFF02190EF450008C5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBA7E266219900DC00777214 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
+		BBA7E268219900E900777214 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
+		BBA7E26A219900F800777214 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,9 @@
 			children = (
 				BB4DEFE12190EF440008C5B5 /* AppDelegate.swift */,
 				BB4DEFE32190EF440008C5B5 /* ViewController.swift */,
+				BBA7E266219900DC00777214 /* GPSViewController.swift */,
+				BBA7E26A219900F800777214 /* ReportViewController.swift */,
+				BBA7E268219900E900777214 /* ResourcesViewController.swift */,
 				BB4DEFE52190EF440008C5B5 /* Main.storyboard */,
 				BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */,
 				BB4DEFED2190EF450008C5B5 /* LaunchScreen.storyboard */,
@@ -138,9 +147,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BBA7E269219900E900777214 /* ResourcesViewController.swift in Sources */,
 				BB4DEFE42190EF440008C5B5 /* ViewController.swift in Sources */,
+				BBA7E26B219900F800777214 /* ReportViewController.swift in Sources */,
 				BB4DEFE22190EF440008C5B5 /* AppDelegate.swift in Sources */,
 				BB4DEFEA2190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld in Sources */,
+				BBA7E267219900DC00777214 /* GPSViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
