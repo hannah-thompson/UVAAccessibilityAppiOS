@@ -9,26 +9,17 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Resources-->
+        <!--GPS-->
         <scene sceneID="MqX-hM-DcG">
             <objects>
-                <viewController id="Kr6-Ec-4T5" customClass="ResourcesViewController" customModule="UVA_Accessibility" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Kr6-Ec-4T5" customClass="GPSViewController" customModule="UVA_Accessibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J2A-9F-W02">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Resources" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MKP-Of-Q0c">
-                                <rect key="frame" x="95" y="277" width="81" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="I6W-cI-zxb"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Resources" image="albums" id="0pq-vQ-B63"/>
+                    <tabBarItem key="tabBarItem" title="GPS" image="map_marker" id="0pq-vQ-B63"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePh-Wj-Nr5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -170,26 +161,17 @@
             </objects>
             <point key="canvasLocation" x="-2047.2" y="456.52173913043481"/>
         </scene>
-        <!--GPS-->
+        <!--Resources-->
         <scene sceneID="kue-0L-f6B">
             <objects>
-                <viewController id="6Fd-5V-zBN" customClass="GPSViewController" customModule="UVA_Accessibility" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="6Fd-5V-zBN" customClass="ResourcesViewController" customModule="UVA_Accessibility" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="246-Fx-u81">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="GPS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VP4-fa-CAM">
-                                <rect key="frame" x="125" y="394" width="34" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="IKQ-of-WkJ"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="GPS" image="map_marker" id="1hF-g4-VUd"/>
+                    <tabBarItem key="tabBarItem" title="Resources" image="albums" id="1hF-g4-VUd"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D1B-LG-m1S" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
