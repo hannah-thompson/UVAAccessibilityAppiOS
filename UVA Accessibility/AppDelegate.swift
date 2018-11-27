@@ -8,6 +8,10 @@
 
 import UIKit
 import CoreData
+import Firebase
+import IQKeyboardManagerSwift
+import GoogleMaps
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +21,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        FirebaseApp.configure()
+        // makes it so that the keyboard won't cover up your text fields (had to put in podfile as well)
+        IQKeyboardManager.shared.enable = true
+        
+        GMSServices.provideAPIKey("AIzaSyCCkwRx2jtlYelWtmajx5DYXDqiyTtbsdM")
+        GMSPlacesClient.provideAPIKey("AIzaSyCCkwRx2jtlYelWtmajx5DYXDqiyTtbsdM")
         return true
     }
 

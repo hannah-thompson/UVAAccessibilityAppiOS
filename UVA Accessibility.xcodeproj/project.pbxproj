@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BB0B3DA321A88DF800568E7F /* ResourceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB0B3DA221A88DF800568E7F /* ResourceTableViewCell.swift */; };
 		BB4DEFE22190EF440008C5B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DEFE12190EF440008C5B5 /* AppDelegate.swift */; };
 		BB4DEFE42190EF440008C5B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DEFE32190EF440008C5B5 /* ViewController.swift */; };
 		BB4DEFE72190EF440008C5B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEFE52190EF440008C5B5 /* Main.storyboard */; };
 		BB4DEFEA2190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BB4DEFE82190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld */; };
 		BB4DEFEC2190EF450008C5B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */; };
 		BB4DEFEF2190EF450008C5B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB4DEFED2190EF450008C5B5 /* LaunchScreen.storyboard */; };
+		BB51166321A891640071809D /* ResourceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51166221A891640071809D /* ResourceItem.swift */; };
+		BB51166521A9DD080071809D /* LinksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51166421A9DD080071809D /* LinksTableViewCell.swift */; };
+		BB51166721A9DD480071809D /* LinksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB51166621A9DD480071809D /* LinksTableViewController.swift */; };
+		BB717D1E21A3449000C70C65 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB717D1D21A3449000C70C65 /* GoogleService-Info.plist */; };
 		BBA7E267219900DC00777214 /* GPSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E266219900DC00777214 /* GPSViewController.swift */; };
 		BBA7E269219900E900777214 /* ResourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E268219900E900777214 /* ResourcesViewController.swift */; };
 		BBA7E26B219900F800777214 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBA7E26A219900F800777214 /* ReportViewController.swift */; };
+		F0A4FD6C7C1409C304C56947 /* Pods_UVA_Accessibility.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9137A04F6BDD47B4C0291590 /* Pods_UVA_Accessibility.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B7C9A6EA75E4BA8B8A94029 /* Pods-UVA Accessibility.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UVA Accessibility.debug.xcconfig"; path = "Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility.debug.xcconfig"; sourceTree = "<group>"; };
+		84E49B1F491527E568224B1D /* Pods-UVA Accessibility.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UVA Accessibility.release.xcconfig"; path = "Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility.release.xcconfig"; sourceTree = "<group>"; };
+		9137A04F6BDD47B4C0291590 /* Pods_UVA_Accessibility.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UVA_Accessibility.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB0B3DA221A88DF800568E7F /* ResourceTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceTableViewCell.swift; sourceTree = "<group>"; };
 		BB4DEFDE2190EF440008C5B5 /* UVA Accessibility.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UVA Accessibility.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB4DEFE12190EF440008C5B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB4DEFE32190EF440008C5B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,6 +37,10 @@
 		BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BB4DEFEE2190EF450008C5B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BB4DEFF02190EF450008C5B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB51166221A891640071809D /* ResourceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceItem.swift; sourceTree = "<group>"; };
+		BB51166421A9DD080071809D /* LinksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableViewCell.swift; sourceTree = "<group>"; };
+		BB51166621A9DD480071809D /* LinksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksTableViewController.swift; sourceTree = "<group>"; };
+		BB717D1D21A3449000C70C65 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BBA7E266219900DC00777214 /* GPSViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPSViewController.swift; sourceTree = "<group>"; };
 		BBA7E268219900E900777214 /* ResourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourcesViewController.swift; sourceTree = "<group>"; };
 		BBA7E26A219900F800777214 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
@@ -37,17 +51,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0A4FD6C7C1409C304C56947 /* Pods_UVA_Accessibility.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BF4C2B33CA3C8900B1D24C6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9137A04F6BDD47B4C0291590 /* Pods_UVA_Accessibility.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		88A26704D4209270AFF81360 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3B7C9A6EA75E4BA8B8A94029 /* Pods-UVA Accessibility.debug.xcconfig */,
+				84E49B1F491527E568224B1D /* Pods-UVA Accessibility.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		BB4DEFD52190EF440008C5B5 = {
 			isa = PBXGroup;
 			children = (
 				BB4DEFE02190EF440008C5B5 /* UVA Accessibility */,
 				BB4DEFDF2190EF440008C5B5 /* Products */,
+				88A26704D4209270AFF81360 /* Pods */,
+				0BF4C2B33CA3C8900B1D24C6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,10 +101,15 @@
 				BBA7E266219900DC00777214 /* GPSViewController.swift */,
 				BBA7E26A219900F800777214 /* ReportViewController.swift */,
 				BBA7E268219900E900777214 /* ResourcesViewController.swift */,
+				BB51166221A891640071809D /* ResourceItem.swift */,
+				BB0B3DA221A88DF800568E7F /* ResourceTableViewCell.swift */,
+				BB51166421A9DD080071809D /* LinksTableViewCell.swift */,
 				BB4DEFE52190EF440008C5B5 /* Main.storyboard */,
+				BB51166621A9DD480071809D /* LinksTableViewController.swift */,
 				BB4DEFEB2190EF450008C5B5 /* Assets.xcassets */,
 				BB4DEFED2190EF450008C5B5 /* LaunchScreen.storyboard */,
 				BB4DEFF02190EF450008C5B5 /* Info.plist */,
+				BB717D1D21A3449000C70C65 /* GoogleService-Info.plist */,
 				BB4DEFE82190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld */,
 			);
 			path = "UVA Accessibility";
@@ -83,9 +122,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BB4DEFF32190EF450008C5B5 /* Build configuration list for PBXNativeTarget "UVA Accessibility" */;
 			buildPhases = (
+				791C3A5AEF2822EC1904F46B /* [CP] Check Pods Manifest.lock */,
 				BB4DEFDA2190EF440008C5B5 /* Sources */,
 				BB4DEFDB2190EF440008C5B5 /* Frameworks */,
 				BB4DEFDC2190EF440008C5B5 /* Resources */,
+				B3E51BC42BBDC3C0289B3D39 /* [CP] Embed Pods Frameworks */,
+				8D9EE7D175EC2B97E1E3D2BD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BB4DEFEF2190EF450008C5B5 /* LaunchScreen.storyboard in Resources */,
+				BB717D1E21A3449000C70C65 /* GoogleService-Info.plist in Resources */,
 				BB4DEFEC2190EF450008C5B5 /* Assets.xcassets in Resources */,
 				BB4DEFE72190EF440008C5B5 /* Main.storyboard in Resources */,
 			);
@@ -142,14 +185,95 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		791C3A5AEF2822EC1904F46B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UVA Accessibility-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D9EE7D175EC2B97E1E3D2BD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3E51BC42BBDC3C0289B3D39 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-UVA Accessibility/Pods-UVA Accessibility-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BB4DEFDA2190EF440008C5B5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BBA7E269219900E900777214 /* ResourcesViewController.swift in Sources */,
+				BB51166721A9DD480071809D /* LinksTableViewController.swift in Sources */,
+				BB0B3DA321A88DF800568E7F /* ResourceTableViewCell.swift in Sources */,
 				BB4DEFE42190EF440008C5B5 /* ViewController.swift in Sources */,
 				BBA7E26B219900F800777214 /* ReportViewController.swift in Sources */,
+				BB51166321A891640071809D /* ResourceItem.swift in Sources */,
+				BB51166521A9DD080071809D /* LinksTableViewCell.swift in Sources */,
 				BB4DEFE22190EF440008C5B5 /* AppDelegate.swift in Sources */,
 				BB4DEFEA2190EF440008C5B5 /* UVA_Accessibility.xcdatamodeld in Sources */,
 				BBA7E267219900DC00777214 /* GPSViewController.swift in Sources */,
@@ -296,6 +420,7 @@
 		};
 		BB4DEFF42190EF450008C5B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B7C9A6EA75E4BA8B8A94029 /* Pods-UVA Accessibility.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -314,6 +439,7 @@
 		};
 		BB4DEFF52190EF450008C5B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84E49B1F491527E568224B1D /* Pods-UVA Accessibility.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

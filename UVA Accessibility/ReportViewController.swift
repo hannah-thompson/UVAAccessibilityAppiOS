@@ -96,6 +96,15 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         // sets up the dismiss keyboard functionality
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(ReportViewController.dismissKeyboard))
         view.addGestureRecognizer(tap)
+        
+        // add in setting the user defaults here
+        if(UserDefaults.standard.object(forKey: "affiliationIndex") != nil){
+            AffiliationChoice.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "affiliationIndex")
+        }
+        if(UserDefaults.standard.object(forKey: "emailAddress") != nil){
+            email.text = UserDefaults.standard.string(forKey: "emailAddress")
+        }
+        
     }
     
     override func didReceiveMemoryWarning() {
@@ -158,6 +167,12 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
         // set up text for email
         let text = "Barrier to Access Report </br>UVA Affiliation: \(String(describing: affiliation!)) </br>Barrier Type: \(String(describing: barrier!)) </br>Barrier Description: \(String(describing: desc)) </br>Barrier Location: \(String(describing: loc))"
         
+        let userDefaults = UserDefaults.standard
+        userDefaults.set(AffiliationChoice.selectedSegmentIndex, forKey: "affiliationIndex")
+        if(emailAddress != "none"){
+            userDefaults.set(emailAddress, forKey: "emailAddress")
+        }
+        
         sendEmail(emailAddress, text, picChosen!)
         
     }
@@ -165,12 +180,18 @@ class ReportViewController: UIViewController, UIImagePickerControllerDelegate, U
     // used to reset the UI elements in the page after the email is sent or saved
     func resetPage(){
         // reset the page
-        AffiliationChoice.selectedSegmentIndex = 0
+        // change to set to defaults
+        AffiliationChoice.selectedSegmentIndex = UserDefaults.standard.integer(forKey: "affiliationIndex")
         BarrierChoice.selectedSegmentIndex = 0
         desctextview.text = ""
         location.text = ""
         imageView.image = nil
-        email.text = ""
+        if(UserDefaults.standard.object(forKey: "emailAddress") != nil){
+            email.text = UserDefaults.standard.string(forKey: "emailAddress")
+        }else{
+            email.text = ""
+        }
+        
     }
     
     // send email with attachment
