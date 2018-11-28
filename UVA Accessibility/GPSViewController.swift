@@ -1,6 +1,5 @@
 // note to self: look into using firebase in order to connect to Google maps
 
-
 //  GPSViewController.swift
 //  UVA Accessibility
 //
@@ -8,43 +7,37 @@
 //  Copyright © 2018 Hannah Marie Thompson. All rights reserved.
 //
 
+/*
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_UhallAthleticFields.pdf
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_ArtsArchitecture.pdf
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_HealthSystem.pdf
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_McCormickRdArea.pdf
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_AldermanRd.pdf (this one is done already)
+ 
+ to get coords: https://www.maps.ie/coordinates.html
+ */
 
 // https://developers.google.com/maps/documentation/ios-sdk/start
-
 import UIKit
 import GoogleMaps
 import GooglePlaces
 
 class GPSViewController: UIViewController, CLLocationManagerDelegate {
     
+    @IBOutlet weak var legend: UIImageView!
     var locationManager = CLLocationManager()
     var mapView: GMSMapView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-    
-    /*
-    func initializeTheLocationManager() {
-        locationManager.delegate = self
-        locationManager.requestWhenInUseAuthorization()
-        locationManager.startUpdatingLocation()
-    }
-    
-    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        // CHANGE THIS BACK
-        var location = locationManager.location?.coordinate
-        
-        cameraMoveToLocation(toLocation: location)
+        // Just added a nav bar so that you could add the legend over the map
+        let logo = UIImage(named: "LegendSmaller")
+        let imageView = UIImageView(image:logo)
+        self.navigationItem.titleView = imageView
+        // MIGHT JUST NEED TO MOVE THE MAP VIEW DOWN A LITTLE AND HAVE THE IMAGE VIEW GO ALL THE WAY ACROSS THE TOP
         
     }
-    
-    func cameraMoveToLocation(toLocation: CLLocationCoordinate2D?) {
-        if toLocation != nil {
-            mapView.camera = GMSCameraPosition.camera(withTarget: toLocation!, zoom: 15)
-        }
-    }*/
     
     override func loadView() {
         // creates defualt map view
@@ -77,6 +70,8 @@ class GPSViewController: UIViewController, CLLocationManagerDelegate {
         let overlay1 = GMSGroundOverlay(bounds: overlayBounds1, icon: icon1)
         overlay1.bearing = 0
         overlay1.map = mapView
+        
+        // ADD THE REST OF THE MAPS AND YOU'LL BE DONE !!!
     }
     
     
