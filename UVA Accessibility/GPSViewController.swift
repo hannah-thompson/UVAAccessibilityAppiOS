@@ -8,11 +8,11 @@
 //
 
 /*
- https://www.fm.virginia.edu/docs/ges/ADA_Regions_UhallAthleticFields.pdf
- https://www.fm.virginia.edu/docs/ges/ADA_Regions_ArtsArchitecture.pdf
- https://www.fm.virginia.edu/docs/ges/ADA_Regions_HealthSystem.pdf
- https://www.fm.virginia.edu/docs/ges/ADA_Regions_McCormickRdArea.pdf
- https://www.fm.virginia.edu/docs/ges/ADA_Regions_AldermanRd.pdf (this one is done already)
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_UhallAthleticFields.pdf (done)
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_ArtsArchitecture.pdf (done)
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_HealthSystem.pdf (done)
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_McCormickRdArea.pdf (done)
+ https://www.fm.virginia.edu/docs/ges/ADA_Regions_AldermanRd.pdf (done)
  
  to get coords: https://www.maps.ie/coordinates.html
  */
@@ -35,12 +35,11 @@ class GPSViewController: UIViewController, CLLocationManagerDelegate {
         let logo = UIImage(named: "LegendSmaller")
         let imageView = UIImageView(image:logo)
         self.navigationItem.titleView = imageView
-        // MIGHT JUST NEED TO MOVE THE MAP VIEW DOWN A LITTLE AND HAVE THE IMAGE VIEW GO ALL THE WAY ACROSS THE TOP
         
     }
     
     override func loadView() {
-        // creates defualt map view
+        // creates defualt map view at Clark Hall
         let camera = GMSCameraPosition.camera(withLatitude: 38.0333, longitude: -78.5077, zoom: 17.0)
         mapView = GMSMapView.map(withFrame: CGRect.zero, camera: camera)
         mapView.isMyLocationEnabled = true
@@ -50,7 +49,9 @@ class GPSViewController: UIViewController, CLLocationManagerDelegate {
         
         // Alderman Road Map
         let southWest = CLLocationCoordinate2D(latitude: 38.02843687053843, longitude: -78.52163982577622)
-        let northEast = CLLocationCoordinate2D(latitude: 38.036711804252995, longitude: -78.50902510341258)
+        // left increase long
+        // up increase latitude
+        let northEast = CLLocationCoordinate2D(latitude: 38.03676, longitude: -78.5091475)
         let overlayBounds = GMSCoordinateBounds(coordinate: southWest, coordinate: northEast)
         
         let icon = UIImage(named: "Alderman Road")
@@ -60,18 +61,52 @@ class GPSViewController: UIViewController, CLLocationManagerDelegate {
         overlay.map = mapView
         
         
-        // Central Grounds Map
-        let southWest1 = CLLocationCoordinate2D(latitude: 38.03093744652292, longitude: -78.50874070543797)
-        let northEast1 = CLLocationCoordinate2D(latitude: 38.03717455049366, longitude: -78.50160737056287)
+        // McCormick Rd Map
+        let southWest1 = CLLocationCoordinate2D(latitude: 38.02955, longitude: -78.51343)
+        let northEast1 = CLLocationCoordinate2D(latitude: 38.03854, longitude: -78.504025)
         let overlayBounds1 = GMSCoordinateBounds(coordinate: southWest1, coordinate: northEast1)
         
-        let icon1 = UIImage(named: "Central Grounds")
+        let icon1 = UIImage(named: "McCormick")
         
         let overlay1 = GMSGroundOverlay(bounds: overlayBounds1, icon: icon1)
         overlay1.bearing = 0
         overlay1.map = mapView
         
-        // ADD THE REST OF THE MAPS AND YOU'LL BE DONE !!!
+        // Hospital Map
+        // long left right
+        let southWest2 = CLLocationCoordinate2D(latitude: 38.029075, longitude: -78.50405)
+        let northEast2 = CLLocationCoordinate2D(latitude: 38.035075, longitude: -78.494975)
+        let overlayBounds2 = GMSCoordinateBounds(coordinate: southWest2, coordinate: northEast2)
+        
+        let icon2 = UIImage(named: "Hospital")
+        
+        let overlay2 = GMSGroundOverlay(bounds: overlayBounds2, icon: icon2)
+        overlay2.bearing = 0
+        overlay2.map = mapView
+        
+        // Arts Grounds Map
+        // long left right
+        let southWest3 = CLLocationCoordinate2D(latitude: 38.03535, longitude: -78.5083)
+        let northEast3 = CLLocationCoordinate2D(latitude: 38.0430, longitude: -78.50065)
+        let overlayBounds3 = GMSCoordinateBounds(coordinate: southWest3, coordinate: northEast3)
+        
+        let icon3 = UIImage(named: "Arts Grounds")
+        
+        let overlay3 = GMSGroundOverlay(bounds: overlayBounds3, icon: icon3)
+        overlay3.bearing = 0
+        overlay3.map = mapView
+        
+        // Athletics Map
+        // long left right
+        let southWest4 = CLLocationCoordinate2D(latitude: 38.0411, longitude: -78.5147)
+        let northEast4 = CLLocationCoordinate2D(latitude: 38.047975, longitude: -78.5056)
+        let overlayBounds4 = GMSCoordinateBounds(coordinate: southWest4, coordinate: northEast4)
+        
+        let icon4 = UIImage(named: "Athletics")
+        
+        let overlay4 = GMSGroundOverlay(bounds: overlayBounds4, icon: icon4)
+        overlay4.bearing = 0
+        overlay4.map = mapView
     }
     
     
