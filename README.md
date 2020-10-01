@@ -9,7 +9,7 @@ This app will serve as a resource to persons on grounds in need of accessibility
 The SDAC resource were stored and pulled from a Firebase database that allows for resources added to be updated in the app in real time. Upon choosing a category the subcategories are presented in a new screen embedded in the navigation controller, where the user can click on their desired resource and be routed to the proper website.
 
 ### Accessible GPS Screen
-<img src="/Navigation.png" width="200">
+<img src="exampleImages/Navigation.png" width="200">
 
 On the GPS screen the user can see their current location in relation to the accessibility maps that were overlayed on to the Google Maps platform. If this product were to be picked up for further development and deployment, I would suggest research into how to enable walking directions specific to the accesible pathways displayed on these maps.
 
