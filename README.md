@@ -4,3 +4,4 @@ This app will serve as a resource to persons on grounds in need of accessibility
 ## Photo Documentation
 
 ### SDAC Resources
+![Resources First Page](/ResourcePage1)
