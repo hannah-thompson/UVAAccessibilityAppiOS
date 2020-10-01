@@ -3,5 +3,11 @@ This app will serve as a resource to persons on grounds in need of accessibility
 
 ## Photo Documentation
 
-### SDAC Resources
+### SDAC Resources Screens
 <img src="/ResourcePage1.png" width="200"> <img src="/ResourcePage2.png" width="200"> <img src="/ResourcePage3.png" width="200">
+
+### Accessible Navigation Screen
+<img src="/Navigation.png" width="200">
+
+### Report Barrier to Access Screen
+<img src="/Report.png" width="200">
